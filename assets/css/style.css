@@ -73,3 +73,28 @@ footer {
         margin-bottom: 10px;
     }
 }
+/* Mobile Menu Toggle */
+#menu-toggle {
+    display: none;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+nav ul.active {
+    display: block;
+}
+
+@media screen and (max-width: 768px) {
+    #menu-toggle {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        text-align: center;
+    }
+}
